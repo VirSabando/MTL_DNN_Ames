@@ -2,7 +2,7 @@
 
 #### Paper available at arXiv:  ####
 
-![alt text](https://github.com/VirginiaSabando/ChemVA/blob/master/teaser_image.jpeg?raw=true)
+![alt text](https://github.com/VirginiaSabando/MTL_DNN_Ames/blob/main/mod_archMTL.jpg)
 
 In this repository you can find:
 * [The arXiv version of our full paper](https://arxiv.org/abs/2008.13150)
