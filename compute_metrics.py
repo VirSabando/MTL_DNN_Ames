@@ -51,7 +51,7 @@ def get_metrics(y_true,y_pred):
 # Helper function that allows to filter out those predictions having an undefined label (-1),
 # which should NOT be taken into account to compute the metrics
 # receives the ground-truth labels (true), the predicted label (pred) and the logits of the DNN (logit)
-def filter_nan_A(true, pred, logit):
+def filter_nan(true, pred, logit):
     idx = np.where(true != -1)
     return idx[0], true[idx[0]].reshape(-1,), pred[idx[0]].reshape(-1,), logit[idx[0]].reshape(-1,)
 

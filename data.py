@@ -35,6 +35,7 @@ def load_data(data_path, model, stage):
     y_internal_overall = internal['Overall']
     y_external_overall = external['Overall']
 
+
     output = ()
     
     # If performing five-fold CV, merge train and internal partitions
@@ -48,6 +49,13 @@ def load_data(data_path, model, stage):
                  y.iloc[:,2].values, 
                  y.iloc[:,3].values, 
                  y.iloc[:,4].values]
+        
+        # Individual targets per strain
+        y_98 =  y_MTL[0]
+        y_100 = y_MTL[1]
+        y_102 = y_MTL[2]
+        y_1535 = y_MTL[3]
+        y_1537 =  y_MTL[4]
 
         # Overall target for consensus and STL_DNN_overall model    
         y_overall = pd.concat([y_train_overall, y_internal_overall]) 
@@ -61,7 +69,12 @@ def load_data(data_path, model, stage):
     
         labels_dict = {
             'MTL':y_MTL,
-            'Overall':y_overall      
+            'Overall':y_overall,
+            '98': y_98,
+            '100': y_100,
+            '102': y_102,
+            '1535': y_1535,
+            '1537': y_1537,
         }
     
         features = X
@@ -79,7 +92,7 @@ def load_data(data_path, model, stage):
                 t = (features[train], [e[train] for e in labels])
                 v = (features[val], [e[val] for e in labels])
                 output.append((t,v))
-        # If training an overall model
+        # If training an overall model or a strain model
         else:
             for train, val in kf.split(features, labels):
                 t = (features[train], labels[train])
