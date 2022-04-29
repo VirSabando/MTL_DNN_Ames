@@ -13,13 +13,13 @@ def load_data(data_path, model, stage):
     internal = df.loc[df['Partition'].str.contains('Internal')]
     external = df.loc[df['Partition'].str.contains('External')]
 
-    # Select all columns corresponding to molecular descriptors
+    # Select all columns corresponding to molecular descriptors only
     # Discard those descriptors showing constant values
-    X_train = train.values[:,:-8]
+    X_train = train.values[:,3:-7]
     l = [not np.nanmax(c)== np.nanmin(c) for c in X_train.T]
-    X_internal = internal.values[:,:-8]
+    X_internal = internal.values[:,3:-7]
     l = l or [not np.nanmax(c)== np.nanmin(c) for c in X_internal.T]
-    X_external = external.values[:,:-8]
+    X_external = external.values[:,3:-7]
     l = l or[not np.nanmax(c)== np.nanmin(c) for c in X_external.T]
     X_train = X_train[:,l]
     X_internal = X_internal[:,l]
