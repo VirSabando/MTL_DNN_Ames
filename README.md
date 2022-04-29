@@ -1,7 +1,7 @@
 # Multi-Task Deep Neural Networks for Ames Mutagenicity Prediction #
 ### Paper available at ChemRxiv:  ###
 
-![alt text](https://github.com/VirginiaSabando/MTL_DNN_Ames/blob/main/mod_archMTL.jpg)
+![alt text](https://github.com/VirginiaSabando/MTL_DNN_Ames/blob/main/graphicalTOC.jpg)
 
 In this repository you can find:
 * [The ChemRxiv version of our full paper]()
