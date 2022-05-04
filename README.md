@@ -8,7 +8,7 @@ In this repository you can find:
 * Source code to reproduce our experiments
 
 The dataset used in our experiments can be downloaded [here](https://csunseduar-my.sharepoint.com/:f:/g/personal/virginia_sabando_cs_uns_edu_ar/EnqdKbVZdQFEuBKUuKs0TfEBb9zx2zchnOzmrtodvm-u9A?e=UjfLPG).
-For further details about implementation and the datasets used, please refer to [our full paper](https://chemrxiv.org/engage/chemrxiv/article-details/626d744611b146743836509b)
+For further details about implementation and the datasets used, please refer to [our paper](https://chemrxiv.org/engage/chemrxiv/article-details/626d744611b146743836509b).
 
 ## How to cite? ##
 
