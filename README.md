@@ -1,5 +1,5 @@
 # Multi-Task Deep Neural Networks for Ames Mutagenicity Prediction #
-### Submitted to the [Journal of Chemical Information and Modeling](https://pubs.acs.org/journal/jcisd8) - under review  ###
+### María Jimena Martínez, María Virginia Sabando, Axel J. Soto, Carlos Roca, Carlos Requena-Triguero, Nuria E. Campillo, Juan A. Páez, and Ignacio Ponzoni. "Multitask Deep Neural Networks for Ames Mutagenicity Prediction". J. Chem. Inf. Model. 2022, 62, 24, 6342–6351. [doi]([https://pubs.acs.org/journal/jcisd8](https://doi.org/10.1021/acs.jcim.2c00532)) ###
 
 ![alt text](https://github.com/VirginiaSabando/MTL_DNN_Ames/blob/main/GraphicalTOC.jpg)
 
@@ -15,14 +15,14 @@ For further details about implementation and the datasets used, please refer to 
 If you find this work useful in your research, please consider citing our paper:
 
 ```bibtex
-@article{martínezMultitask2022, 
-place={Cambridge}, 
-title={Multi-Task Deep Neural Networks for Ames Mutagenicity Prediction}, 
-DOI={10.26434/chemrxiv-2022-852tf}, 
-journal={ChemRxiv}, 
-publisher={Cambridge Open Engage}, 
-author={Martínez, María Jimena and Sabando, María Virginia and Soto, Axel J. and Roca, Carlos and Requena-Triguero, Carlos and Campillo, Nuria E. and Páez, Juan A. and Ponzoni, Ignacio}, 
-year={2022},
-note={This content is a preprint and has not been peer-reviewed.}
-} 
+@article{martinez2022multitask,
+  title={Multitask Deep Neural Networks for Ames Mutagenicity Prediction},
+  author={Mart{\'\i}nez, Mar{\'\i}a Jimena and Sabando, Mar{\'\i}a Virginia and Soto, Axel J and Roca, Carlos and Requena-Triguero, Carlos and Campillo, Nuria E and P{\'a}ez, Juan A and Ponzoni, Ignacio},
+  journal={Journal of Chemical Information and Modeling},
+  volume={62},
+  number={24},
+  pages={6342--6351},
+  year={2022},
+  publisher={ACS Publications}
+}
 ```
